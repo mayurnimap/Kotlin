@@ -1,3 +1,9 @@
 fun main() {
-    println("Hello World!")
+
+    val s = arrayOf("apple","bana","yes")
+
+    for(i in 0 until s.size)
+    {
+        println(s[i])
+    }
 }
