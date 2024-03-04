@@ -13,3 +13,16 @@
 
 
 
+fun main()
+{
+
+    println("hello mayur".Xyz())
+
+}
+
+fun String.Xyz():String
+{
+    return "----------------\n $this \n--------------------"
+}
+
+// this means current object so first -- will print then /n means leave one line then hello mayur then again ---

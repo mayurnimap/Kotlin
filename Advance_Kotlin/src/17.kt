@@ -20,3 +20,12 @@ fun main()
 
     a.forEach{ println(it) }
 }
+
+
+
+
+
+
+
+
+            
