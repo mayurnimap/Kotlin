@@ -18,7 +18,7 @@
  fun main()
 {
      val tile : Tile = Red("hello",20)
-    val points = when(tile){
+     val points = when(tile){
         is Red -> tile.points * 2
         is black -> tile.points * 4
     }
@@ -26,15 +26,6 @@
     println(points)
 
  }
-
-
-
-
-
-
-
-
-
 sealed class Tile
 
 class Red(val type:String,val points: Int) : Tile()

@@ -21,6 +21,8 @@ fun main()
 
     val ref3 =  P3("mayur",20)
 
+
+
 //    if we print ref3 then we will get the name mayur and class name properly unlike ref add
 //    this is because we have made this class as data class so we dont have type the boiler code
     println(ref3)

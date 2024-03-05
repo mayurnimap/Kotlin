@@ -10,9 +10,9 @@
 
 fun main()
 {
-    Sharing.increase()
-    Sharing.increase()
-    Sharing.decrease()
+    Sharing.increase() //tw=1
+    Sharing.increase() //tw=2
+    Sharing.decrease() //fb=1
 
     Sharing.display()
 }

@@ -5,11 +5,13 @@
 // in object we cant create constrcutor because we are not creating the object here we are directly declaring it but  init block are allowed
 // we can  do inheritance and implement in this
 //object can have only one object means we cant have two references cause we are calling it with the object name
+// object is like class which has static method and we are calling that method with the class/object name
 
 
 fun main()
 {
     A.mayur()
+
     B.aarti()
 }
 
