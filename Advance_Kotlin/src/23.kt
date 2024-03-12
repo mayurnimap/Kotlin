@@ -16,14 +16,6 @@ fun main()
     val nested2 = Outer().Nested2()  // when we want to acces the inner class functions and properties
     nested2.test1()
 }
-
-
-
-
-
-
-
-
 class Outer{
 
     var i = 0
@@ -33,7 +25,7 @@ class Outer{
         fun test()
         {
 //            println(i)     // this will give error becuase this is nested class .. nested class cant access the variable and object
-//            whic are declared in the outer class for that we have to prefixe our nested class with inner keyword
+//            which are declared in the outer class for that we have to prefix our nested class with inner keyword
         }
 
     }
@@ -44,5 +36,6 @@ class Outer{
         {
             println(i) // this will work because we have prefix the class with inner keyword
         }
+                      // whenever we use inner keyword we can used the properties and behaviours of its outer class
     }
 }

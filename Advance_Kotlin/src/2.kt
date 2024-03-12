@@ -8,6 +8,8 @@
 // it will be very easy such as adding count in gmail as we know gmail is one app and we want everyone to count
 //the numbers of gmail using only one object so the tally will be easy
 
+//https://chat.openai.com/c/c9252d9f-9449-420f-abee-145e1ccbf7de
+
 fun main()
 {
     Sharing.increase() //tw=1

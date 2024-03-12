@@ -2,7 +2,13 @@
 
 // in kotlin we can stored function in variable and we can call that function
 // important thing is like if we have to stored in a variable then stored it in a and then : is compulsory
-//
+
+
+// Advantages of generic:
+
+//Type casting is evitable- No need to typecast the object.
+//Type safety- Generic allows only a single type of object at a time.
+//Compile time safety- Generics code is checked at compile time for the parameterized type so that it avoids run-time error.
 
 fun main()
 {

@@ -10,6 +10,8 @@
 // RUN FUNCTION 
 // return value of apply function is object
 
+//https://chat.openai.com/c/62142156-8382-4953-8411-b2764f4fe324
+
 
 fun main()
 {
@@ -18,6 +20,8 @@ fun main()
     ref1.a = "mayur" //assign the name
     ref1.b = 20   // assign the age
 
+
+     // apply: Use it when you're setting up the initial configuration of an object during its creation.
     // now evertime if we want to change the value we have use it reference so for that we have apply function
     // using apply we can directly change the properties which using ref or this
 
@@ -30,6 +34,9 @@ fun main()
 
     //======================================================================================
 
+
+//    let: Use it when you want to do something with a value only if it's not null.
+
     ref1.let {
         println(it.a)
         println(it.b)
@@ -40,6 +47,8 @@ fun main()
 
     //=====================================================================================
 
+//    Use it when you want to focus on working with properties and methods of a single object without repeating its name.
+
     with(ref1)
     {
         a = "mayur"
@@ -47,6 +56,9 @@ fun main()
     }
 
     //========================================================================================
+
+//    Use it when you want to perform operations on an object and possibly return a value.
+//    It's like a temporary playground for your object.
 
 //    ref1.run
 //    {

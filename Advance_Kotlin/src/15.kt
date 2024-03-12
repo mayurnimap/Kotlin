@@ -29,8 +29,6 @@ fun main()
 
 //    this will give the output where id==2 and here also we have used the (it) keyword
 
-
-
 }
 
 
