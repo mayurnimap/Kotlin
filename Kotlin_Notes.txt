@@ -1,0 +1,87 @@
+Kotlin notes :
+
+  Data declaration = 1)var = if we have to change the value later after assigning it
+                     2)val = if we used val then we cant reassign value to it. it is just like final keyword in java..
+ 
+  for explicitely (manually) = var score       :  Int = 12
+                               var temperature :  Double = 89.4
+                               var israining   :  Boolean = true
+                               var alphabet    :  Char = 'a'
+                               var name        :  String = "mayur"
+
+=========================================================================================================================
+
+method declaration = fun mayur(){
+                      - - block of statement- -
+                     }
+
+======================================================================================================================
+
+Switch replacement in kotlin
+
+fun main(){
+             val animal = "dog"
+             when (animal){ 
+                            "horse" -> println("animal is horse")
+                            "cat" -> println("animal is cat")
+                            "dog" -> println("animal is dog")
+                            "tiger" -> println("animal is tiger")
+                             else  ->  println("animal is found")
+         }
+                            
+}
+
+=============================================================================================================================
+
+
+init = 
+
+class Automobile(val name: String, val tyres: Int, val maxSeating: Int)
+  {
+      init {
+          println("Init Block 1")
+      }
+    
+      fun drive() {}
+    
+      init {
+          println("Init Block 2")
+      }
+    
+      fun applyBrakes() {}
+  }
+  
+This is how we define init block in Kotlin class. Any initialization code, you want to execute can be written inside these init blocks. 
+You can define multiple init blocks inside a class and they are executed in the sequence defined in the class.
+
+==================================================================================================================================
+
+-In kotlin it is compulsory to initialize the variable whenever it is declared and if we want to initialize it later then we should write lateinit which mean late initilizer
+
+-such as lateinit var a : String
+
+-this property is not used for Int,Boolean,Float ie when we want data in int, float and boolean then it is not possible to do lateinit.
+
+===================================================================================================================================
+
+-Is operator is used to check that is the instance is same with class eg  : val circle = Circle() ; 
+                                                                                                                      if(circle is Circle){
+                                                                                                                      println("sucess")
+                                                                                                            }
+
+=================================================================================================================================
+
+Acess specifiers
+-protected keywords allow to access the object only in the subclass
+-public keyword allow to access the object globally in the project
+-private keyword allow to access the object only in the same class
+-internal and public works the same 
+             
+
+
+
+
+
+
+
+
