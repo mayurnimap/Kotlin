@@ -1,0 +1,13 @@
+
+1) lateinit var: When you use lateinit var in Kotlin, you're telling the compiler that you'll initialize this variable before using it.  
+    But if you forget to initialize it or try to access it before initialization, it will throw an exception. It's like telling the compiler, "Hey, I promise to initialize this variable before using it, so don't worry about it."
+
+2) lazy: When you use lazy in Kotlin, you're telling the compiler to initialize this property only when it's needed, and then 
+   remember the value for later use. So, the first time you access it, it does the work to compute the value, and then it keeps that value around for next time. It's like telling the compiler, "Hey, don't bother doing this work until someone asks for it, and then just remember it for next time."
+
+Internally, when you use lazy, Kotlin creates a small mechanism to ensure that the initialization code inside the lazy { ... } block is executed only once, the first time the property is accessed. After that, it just returns the stored value without re-computing it.
+
+So, the main difference is:
+
+-lateinit var is about promising to initialize a variable before using it.
+-lazy is about delaying the initialization of a property until it's actually needed, and then caching the value for later use.

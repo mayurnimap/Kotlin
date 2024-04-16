@@ -58,7 +58,7 @@ fun main()
     //========================================================================================
 
 //    Use it when you want to perform operations on an object and possibly return a value.
-//    It's like a temporary playground for your object.
+//    5It's like a temporary playground for your object.
 
 //    ref1.run
 //    {
